@@ -1,20 +1,21 @@
 #Tabsy
 
 `tabsy` is command line application that gets firefox open tabs and store them in a text file
+
 `tabsy` uses [node](nodejs.org) and it is based on the listing tabs functionality in the [firefox-client](https://github.com/harthur/firefox-client) library
 
 
-##install
+##Install
 you can install `tabsy`  via npm
 ```bash
 npm install -g tabsy
 ```
 
-##usage
+##Usage
 to use `tabsy` you need to enable remote debugging on Firefox
 
 ### Connecting with Desktop Firefox
-taken from `firefox-client`[README page](https://github.com/harthur/firefox-client/blob/master/README.md) 
+Taken from `firefox-client` [README page](https://github.com/harthur/firefox-client/blob/master/README.md) 
 1. Enable remote debugging (You'll only have to do this once)
  1. Open the DevTools. **Web Developer** > **Toggle Tools**
  2. Visit the settings panel (gear icon)
@@ -41,6 +42,8 @@ tabsy -f [YOUR-FILE-PATH]
 ```bash
 tabsy -p [PORT]
 ```
+##License
+MIT License http://opensource.org/licenses/MIT
 
 
 
