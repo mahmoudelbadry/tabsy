@@ -1,0 +1,25 @@
+{
+    "name": "tabsy",
+    "preferGlobal": true,
+    "version": "0.0.1",
+    "author": "Mahmoud El-Badry<mahmoud.mustafa.elbadry@gmail.com>",
+    "description": "app that get open firefox tabs and store them in text file",
+    "contributors": [],
+    "bin": {
+        "tabsy": "./bin/tabsy"
+    },
+    "scripts": {},
+    "keywords": [
+        "cli",
+        "firefox"
+    ],
+    "dependencies": {
+        "commander": "*",
+        "firefox-client": "*",
+        "lazy": "*"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.8"
+    }
+}
