@@ -8,7 +8,7 @@ var lazy = require('lazy');
 
 program
     .version(pjson.version)
-    .option('-f, --file [file]', 'use another file as the links file' , 'links.txt')
+    .option('-f, --file [file]', 'use another file as the links file' , '~/links.txt')
     .option('-p, --port [port]', 'listen for Firefox on another port', 6000)
     .parse(process.argv);
 
