@@ -4,11 +4,11 @@ var pjson = require('./package.json');
 var FirefoxClient = require('firefox-client');
 var fs = require('fs');
 var lazy = require('lazy');
-
+var home = process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
 
 program
     .version(pjson.version)
-    .option('-f, --file [file]', 'use another file as the links file' , '~/links.txt')
+    .option('-f, --file [file]', 'use another file as the links file' , home + '/links.txt')
     .option('-p, --port [port]', 'listen for Firefox on another port', 6000)
     .parse(process.argv);
 
